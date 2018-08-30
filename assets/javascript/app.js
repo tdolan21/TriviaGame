@@ -3,10 +3,12 @@ var intervalId;
 
 //doument ready function
 $(document).ready(function() {
-$("#timeRemain").text(intervalId)
 
+//start function for the timer
 function start(){
-intervalId = setInterval(decrement, 5000);
-console.log(intervalId);
+intervalId = setInterval(decrement, 60000);
+
 }
+
+$("#timeRemain").text(intervalId);
 });
