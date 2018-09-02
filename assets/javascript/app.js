@@ -1,12 +1,21 @@
 //Global variables
 var intervalId;
+var timeCount = 60;
 
 //doument ready function
 $(document).ready(function() {
-$("#timeRemain").text(intervalId)
 
+
+
+// start function for the timer
 function start(){
-intervalId = setInterval(decrement, 5000);
-console.log(intervalId);
+setInterval(decrement, 1000);
+
 }
+function decrement(){
+timeCount--
+console.log(timeCount)
+$("#timeRemain").text(timeCount);
+}
+start();
 });
