@@ -61,10 +61,11 @@ $("#timeRemain").text(timeCount);
 
 if (timeCount === 0) {
     stop();
+    
 }
 //stop and restart function
 function stop(){
-    timeCount=null;
+    timeCount=0;
     clearInterval(timeCount)
     alert("you lose");
 }
